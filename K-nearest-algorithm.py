@@ -79,3 +79,26 @@ overfitting to localized noise in the training data. This allowed it to
 correctly classify the mathematically overlapping regions between the 
 Versicolor and Virginica clusters based purely on spatial proximity.
 """
+
+"""
+-----------------------------------------------------------------------------
+Assignment 3: K-Nearest Neighbors (KNN)
+Concept: Supervised Instance-Based (Lazy) Learning
+-----------------------------------------------------------------------------
+KNN is a non-parametric classification algorithm. It is considered "lazy" 
+because it does not construct a generalized internal mathematical model 
+during the training phase. Instead, it simply stores the entire training 
+dataset in memory.
+
+* Distance Metric: During the testing phase, the algorithm calculates the 
+  distance between the unseen data point and all stored training points. 
+  Euclidean Distance Formula: Distance = sqrt( (p1 - q1)^2 + (p2 - q2)^2 )
+* Classification Rule: The algorithm identifies the 'k' training samples 
+  that possess the smallest calculated distance to the test point. The test 
+  point is then assigned the mathematical mode (majority vote) of those neighbors.
+* The 'k' Hyperparameter: 
+  - A smaller 'k' (e.g., k=1) creates complex, jagged decision boundaries 
+    with low bias but high variance, making it highly susceptible to overfitting.
+  - A larger 'k' mathematically smooths the decision boundaries, increasing 
+    bias but lowering variance.
+"""

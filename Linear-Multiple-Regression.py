@@ -133,3 +133,22 @@ Data Artifact: You can see a strict vertical stack of green dots at exactly
 the linear model struggles to predict these values accurately, calculating 
 them to be anywhere from 1.0 to over 7.0.
 """
+
+"""
+Assignment 2: Linear Regression
+Concept: Supervised Parametric Regression
+-----------------------------------------------------------------------------
+Linear regression models the linear relationship between a scalar continuous 
+dependent variable 'y' and one or more independent variables (features) 'X'.
+
+* The Hypothesis Function: The model assumes the target can be calculated 
+  by a linear combination of the input features plus a bias term:
+  y = (w1 * x1) + (w2 * x2) + ... + (wn * xn) + bias
+* Parameter Optimization (Ordinary Least Squares): The objective of the 
+  algorithm is to find the optimal weights (w) and bias. It does 
+  this by minimizing a cost function, typically the Mean Squared Error (MSE). 
+  MSE Formula: MSE = Average of (Actual_y - Predicted_y)^2
+* Simple vs. Multiple: Simple Linear Regression utilizes exactly a 
+  1-dimensional feature vector. Multiple Linear Regression utilizes an 
+  n-dimensional feature vector space.
+  """

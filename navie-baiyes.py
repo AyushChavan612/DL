@@ -80,3 +80,24 @@ BMI and Glucose levels do not influence each other) inherently limits the
 predictive ceiling of this algorithm in complex biological datasets, leading 
 to the 39 misclassifications observed in the matrix.
 """
+
+"""
+-----------------------------------------------------------------------------
+Assignment 4: Gaussian Naïve Bayes
+Concept: Supervised Probabilistic Classification
+-----------------------------------------------------------------------------
+Naïve Bayes is a probabilistic classifier founded on applying Bayes' Theorem. 
+It is categorized as "naïve" because it makes a strict assumption of 
+conditional independence between every pair of features given the class label.
+
+* Bayes' Theorem Application: 
+  P(Class | Features) = [ P(Features | Class) * P(Class) ] / P(Features)
+* Maximum A Posteriori (MAP) Rule: The model calculates this probability 
+  for all possible classes and assigns the class label with the highest 
+  resulting probability.
+* Gaussian Assumption (GaussianNB): For continuous data, the algorithm 
+  assumes that the values associated with each class are distributed 
+  according to a normal (Gaussian) distribution. 
+  Gaussian Formula: 
+  P(x | y) = [ 1 / sqrt(2 * pi * variance) ]  * e^[ -(x - mean)^2 / (2 * variance) ]
+"""

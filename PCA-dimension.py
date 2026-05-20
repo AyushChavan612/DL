@@ -95,3 +95,29 @@ The PCA successfully reduced the dimensionality of the dataset by 50%
 (from 4D to 2D) while preserving enough critical variance to clearly 
 differentiate the species classes.
 """
+
+"""
+Assignment 1: Principal Component Analysis (PCA)
+Concept: Unsupervised Dimensionality Reduction
+-----------------------------------------------------------------------------
+PCA is a statistical procedure that uses an orthogonal transformation to 
+convert a set of observations of possibly correlated variables into a set 
+of values of linearly uncorrelated variables called Principal Components.
+
+* Covariance Matrix: PCA begins by calculating the covariance matrix of the 
+  standardized dataset to identify the directional relationship between all 
+  features.
+* Eigenvectors and Eigenvalues: The algorithm computes the eigenvectors and 
+  eigenvalues of this covariance matrix.
+  - The Eigenvectors determine the direction of the new feature space 
+    (the principal components).
+  - The Eigenvalues determine the magnitude (how much variance of the 
+    original data is captured along that eigenvector).
+* Dimensionality Reduction: The principal components are sorted in 
+  descending order of their eigenvalues. By selecting the top 'k' components, 
+  the algorithm projects the high-dimensional data onto a lower-dimensional 
+  subspace while preserving the maximum possible variance.
+* Why Standardization is Mandatory: PCA is variance-dependent. If features 
+  are not scaled, features with larger numerical ranges will skew the math.
+  Standardization Formula: z = (x - mean) / standard_deviation
+  """
