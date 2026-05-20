@@ -35,6 +35,7 @@ Lines 33-36: plt.xlabel, ylabel, title, grid — Adds the text labels and the ba
 
 Line 37: plt.show() — The execution command that forces Windows to draw and open the GUI window containing the finalized graph.
 """
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
